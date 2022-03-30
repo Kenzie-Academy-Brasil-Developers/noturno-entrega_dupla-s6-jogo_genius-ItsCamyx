@@ -1,0 +1,91 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: rgb(37, 35, 35);
+}
+
+.title {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Inter';
+    color: white;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.color-green {
+    background-color: green;
+    width: 20rem;
+    height: 20rem;
+    border-top-left-radius: 100%;
+    border: solid rgb(42, 185, 42) 5px;
+    margin-right: 20px;
+}
+
+.color-yellow {
+    background-color: yellow;
+    width: 20rem;
+    height: 20rem;
+    border-top-right-radius: 100%;
+    border: solid rgb(195, 195, 38) 5px;
+}
+
+.color-red {
+    background-color: red;
+    width: 20rem;
+    height: 20rem;
+    border-bottom-left-radius: 100%;
+    margin-right: 20px;
+    border: solid rgb(238, 105, 105) 5px;
+}
+
+.color-blue {
+    background-color: blue;
+    width: 20rem;
+    height: 20rem;
+    border-bottom-right-radius: 100%;
+    border: solid rgb(87, 87, 202) 5px;
+}
+
+.left-side {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.right-side {
+    display: flex;
+}
+
+.middle{
+    display: flex;
+    position: absolute; 
+    background-color: #e9eca7;
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 100%;
+    margin-top: 13rem;
+    z-index: 1;
+}
+
+button{
+    background-color: white;
+    border: none;
+    width: 7rem;
+    height: 2rem;
+    margin-top: 10rem;
+    
+}
+
