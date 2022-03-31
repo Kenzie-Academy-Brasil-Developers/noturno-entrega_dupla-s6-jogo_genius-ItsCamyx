@@ -29,6 +29,7 @@ function startGame() {
   const startButton = document.getElementById("start");
   startButton.innerText = "Parar";
   round();
+
 }
 
 function round() {
@@ -106,6 +107,12 @@ function endGame() {
   score = 0;
   const startButton = document.getElementById("start");
   startButton.innerText = "Jogar Novamente";
+}
+function showResults() {
+  const result = document.createElement("p");
+  result.innerText = 'Correto !';
+  const mostrarPlacar = document.getElementById("score");
+  mostrarPlacar.appendChild(result);
 }
 
 //mostra o score do jogo no final

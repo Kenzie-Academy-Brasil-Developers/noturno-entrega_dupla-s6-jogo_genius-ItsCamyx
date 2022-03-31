@@ -5,7 +5,7 @@
     
 }
 body{
-    background-color: rgb(37, 35, 35);
+    background-image: url("../assets/mariobg.png");
 }
 
 .title {
@@ -38,6 +38,11 @@ body{
 
 .color-green.active {
     background-color: lightgreen;
+    transform:scale(1.05);
+    transition: 1.5s;
+    box-shadow: 2px 1px 64px 13px lightgreen;
+-webkit-box-shadow: 2px 1px 64px 13px lightgreen;
+-moz-box-shadow: 2px 1px 64px 13px lightgreen;
 }
 
 .color-yellow {
@@ -52,6 +57,11 @@ body{
 
 .color-yellow.active {
     background-color: lightyellow;
+    transform:scale(1.05);
+    transition: 1.5s;
+    box-shadow: 2px 1px 64px 13px lightyellow;
+    -webkit-box-shadow: 2px 1px 64px 13px lightyellow;
+    -moz-box-shadow: 2px 1px 64px 13px lightyellow;
 }
 
 .color-red {
@@ -62,11 +72,16 @@ body{
     margin-right: 20px;
     border: solid rgb(238, 105, 105) 5px;
     cursor: pointer;
-    transition: background-color 1s ease-in-out;
+    transition: background-color 1.5s ease-in-out;
 }
 
 .color-red.active {
     background-color: lightcoral;
+    transform:scale(1.05);
+    transition: 1.5s;
+    box-shadow: 2px 1px 64px 13px lightcoral;
+-webkit-box-shadow: 2px 1px 64px 13px lightcoral;
+-moz-box-shadow: 2px 1px 64px 13px lightcoral;
 }
 
 .color-blue {
@@ -81,6 +96,11 @@ body{
 
 .color-blue.active {
     background-color: lightblue;
+    transform:scale(1.05);
+    transition: 1.5s;
+    box-shadow: 2px 1px 64px 13px lightblue;
+    -webkit-box-shadow: 2px 1px 64px 13px lightblue;
+    -moz-box-shadow: 2px 1px 64px 13px lightblue;
 }
 
 .left-side {
@@ -95,7 +115,7 @@ body{
 .middle{
     display: flex;
     position: absolute; 
-    background-color: #e9eca7;
+    background-color: brown;
     position: absolute;
     width: 15rem;
     height: 15rem;
@@ -115,12 +135,15 @@ body{
 }
 
 button{
-    background-color: white;
-    border: none;
+    background-color:rgb(77, 46, 46);
     width: 7rem;
     height: 2rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     cursor: pointer;
+    border: 1px black solid;
+    border-radius: 10%;
+    font-family: 'Inter';
+    color: white;
     
 }
 
