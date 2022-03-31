@@ -55,7 +55,7 @@ function showColors() {
       showingSequence = false;
       clearInterval(interval);
     }
-  }, 1400);
+  }, 1250);
 }
 
 //função para mostrar (trocar o fundo) do pad na tela
@@ -86,11 +86,14 @@ function checkSequence() {
     }
   }
   if (playerSequence.length === gameSequence.length) {
+    showResults(); 
     //next Round
     score = playerSequence.length;
     playerSequence = [];
     setTimeout(function () {
-      round();
+      hideScore();
+      round(); 
+      
     }, 1000);
   }
 }
@@ -109,7 +112,7 @@ function endGame() {
   startButton.innerText = "Jogar Novamente";
 }
 function showResults() {
-  const result = document.createElement("p");
+  const result = document.createElement("h3");
   result.innerText = 'Correto !';
   const mostrarPlacar = document.getElementById("score");
   mostrarPlacar.appendChild(result);

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap');
 * {
     margin: 0 auto;
     padding: 0;
@@ -9,12 +11,12 @@ body{
 }
 
 .title {
-    margin-top: 50px;
+    margin-top: 60px;
     text-align: center;
     margin-bottom: 50px;
-    font-family: 'Inter';
+    font-family: 'Rubik Puddles';
     color: white;
-    font-size: 35px;
+    font-size: 55px;
     font-weight: 500;
 }
 
@@ -129,21 +131,27 @@ body{
 
 #score {
     text-align: center;
-    font-family: 'Inter';
+    font-family: 'Orbitron';
     font-weight: 500;
-    font-size: 13px;
+    font-size: 12px;
+    color: wheat;
 }
 
 button{
-    background-color:rgb(77, 46, 46);
-    width: 7rem;
+    background-color:rgb(170, 81, 81);
+    width: 10rem;
     height: 2rem;
     margin-top: 2rem;
     cursor: pointer;
     border: 1px black solid;
     border-radius: 10%;
-    font-family: 'Inter';
-    color: white;
+    font-family: 'Orbitron';
+    color: wheat;
     
+}
+
+h3{
+    font-family: 'Orbitron';
+    font-size: 20px;
 }
 
