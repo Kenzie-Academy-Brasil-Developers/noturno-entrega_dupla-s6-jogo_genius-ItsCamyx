@@ -126,6 +126,7 @@ function showScore() {
   recorde.innerText = "Seu recorde é: " + highestScore;
   const tenteNovamente = document.createElement("p");
   tenteNovamente.innerText = "Sequência foi errada, tente novamente!";
+  hideScore();
   const mostrarPlacar = document.getElementById("score");
   mostrarPlacar.appendChild(pontuacao);
   mostrarPlacar.appendChild(recorde);
