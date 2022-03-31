@@ -27,7 +27,7 @@ function startGame() {
   hideScore();
   playing = true;
   const startButton = document.getElementById("start");
-  startButton.innerText = "OFF";
+  startButton.innerText = "Parar";
   round();
 }
 
@@ -54,7 +54,7 @@ function showColors() {
       showingSequence = false;
       clearInterval(interval);
     }
-  }, 2000);
+  }, 1400);
 }
 
 //função para mostrar (trocar o fundo) do pad na tela
@@ -64,7 +64,7 @@ function showPad(color) {
   pad.classList.add("active");
   setTimeout(function () {
     pad.classList.remove("active");
-  }, 1000);
+  }, 600);
 }
 
 //quando o jogador clica em um pad, para adicionar uma cor a sequencia do jogador
@@ -105,7 +105,7 @@ function endGame() {
   gameSequence = [];
   score = 0;
   const startButton = document.getElementById("start");
-  startButton.innerText = "ON";
+  startButton.innerText = "Jogar Novamente";
 }
 
 //mostra o score do jogo no final
